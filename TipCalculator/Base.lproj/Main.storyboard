@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TipCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ta8-bW-Rhk">
+                                <rect key="frame" x="105.5" y="80" width="203.5" height="64.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How much was your meal?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qah-Sh-wr9">
+                                        <rect key="frame" x="0.0" y="0.0" width="203.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter cost of meal" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7dl-iB-eQE">
+                                        <rect key="frame" x="0.0" y="30.5" width="203.5" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                        <connections>
+                                            <action selector="textFieldEdited:" destination="BYZ-38-t0r" eventType="editingChanged" id="OSB-YF-kdc"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="yEx-xt-0Ne">
+                                <rect key="frame" x="187.5" y="181" width="39" height="61.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10%:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQz-NR-rRW">
+                                        <rect key="frame" x="0.0" y="0.0" width="36.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15%:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2eb-9P-5B8">
+                                        <rect key="frame" x="0.0" y="20.5" width="36.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20%:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nAM-cx-aOI">
+                                        <rect key="frame" x="0.0" y="41" width="39" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dgg-zc-zf5">
+                                <rect key="frame" x="105.5" y="327" width="203.5" height="62.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip Amount:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PHv-vn-5KT">
+                                        <rect key="frame" x="0.0" y="0.0" width="203.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Tip Amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C6i-Ps-EKE">
+                                        <rect key="frame" x="0.0" y="28.5" width="203.5" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="tipTextFieldEdited:" destination="BYZ-38-t0r" eventType="editingChanged" id="a58-ef-8oY"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Cost:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ng-Wy-1m1">
+                                <rect key="frame" x="166" y="438" width="82" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="8ng-Wy-1m1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AOH-Bq-L9r"/>
+                            <constraint firstItem="yEx-xt-0Ne" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ikg-Jd-J0O"/>
+                            <constraint firstItem="8ng-Wy-1m1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="MRy-Yg-UN0"/>
+                            <constraint firstItem="dgg-zc-zf5" firstAttribute="trailing" secondItem="Ta8-bW-Rhk" secondAttribute="trailing" id="auY-Vn-ySu"/>
+                            <constraint firstItem="Ta8-bW-Rhk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.25" id="cA2-g7-iGW"/>
+                            <constraint firstItem="dgg-zc-zf5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ct9-bw-1D5"/>
+                            <constraint firstItem="dgg-zc-zf5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.8" id="fxS-uN-EkV"/>
+                            <constraint firstItem="Ta8-bW-Rhk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qJi-cU-Wd7"/>
+                            <constraint firstItem="dgg-zc-zf5" firstAttribute="leading" secondItem="Ta8-bW-Rhk" secondAttribute="leading" id="sMT-5D-cEl"/>
+                            <constraint firstItem="yEx-xt-0Ne" firstAttribute="top" secondItem="Ta8-bW-Rhk" secondAttribute="bottom" constant="36.5" id="ugp-9V-0Si"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="costTextField" destination="7dl-iB-eQE" id="9bQ-cU-hf0"/>
+                        <outlet property="fifteenPercentLabel" destination="2eb-9P-5B8" id="ssY-Ee-S8a"/>
+                        <outlet property="tenPercentLabel" destination="xQz-NR-rRW" id="vKM-cD-WMb"/>
+                        <outlet property="tipAmountTextField" destination="C6i-Ps-EKE" id="zfZ-Nw-qkJ"/>
+                        <outlet property="totalCostLabel" destination="8ng-Wy-1m1" id="hIm-dG-WSV"/>
+                        <outlet property="twentyPercentLabel" destination="nAM-cx-aOI" id="lr8-hD-pdS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="139"/>
+        </scene>
+    </scenes>
+</document>
